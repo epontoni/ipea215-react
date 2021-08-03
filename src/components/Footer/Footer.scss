@@ -1,0 +1,32 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00cc66;
+    padding: 0.5rem;
+}
+
+.footer__copyright {
+    font-weight: 600;
+    color: #212121;
+    margin: 0;
+    padding: 0;
+}
+
+.footer__social {
+    margin-bottom: -10px;
+}
+
+.footer__social a {
+    margin: 0;
+    padding: 0;
+    color: #f7f7f7;
+    font-size: 2rem;
+}
+.footer__social a:hover {
+    color: #222121;
+    transition: all 0.3s ease;
+}
+
+
+

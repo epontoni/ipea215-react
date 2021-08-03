@@ -1,0 +1,104 @@
+@import '../../../index.scss';
+
+.row {
+    display: flex;
+
+    @include tablet {
+        flex-direction: column;
+    }
+}
+
+.mr {
+    margin-right: 1rem;
+}
+
+.ml {
+    margin-left: 1rem;
+}
+.about {
+    /*display: flex;
+    flex-direction: column;*/
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem 0.5rem;
+
+    &__title {
+        color: $dark;
+    }
+    &--hr {
+        height: 0px;
+        border-top: 1px solid #cccccc;
+        border-bottom: 1px solid #ffffff;
+        margin-bottom: 0.5rem;
+    }
+ 
+    &__container {
+        display: flex;
+        flex-direction: column;
+        // justify-content: space-between;
+        // @include tablet {
+        //     flex-direction: column;
+        // }
+        &--img {
+            max-width: 30%;
+            
+            @include tablet {
+                margin: 5px auto;
+                max-width: 100%;
+            }
+        }
+        &--subtitle {
+            margin: 0.5rem 0;
+        }
+        &__data {
+            background-image: linear-gradient( 109.6deg,  rgba(121,203,202,1) 11.2%, rgba(119,161,211,1) 91.1% );
+            padding: 1rem;
+            border-radius: 0.5rem;
+            max-width: 750px;
+            width: 100%;
+            margin: 5px auto;
+
+            & p {
+                margin-left:1.5rem;
+                padding:0.75rem;
+                text-align: justify;
+            }
+        }
+    }
+}
+
+.hero {
+    position: relative;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;;
+    border-bottom: 23px solid $blue;
+    border-image: url("../../images/guardapampa.png");
+    border-image-repeat: repeat;
+    border-image-slice: 0 0 100 0;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1%;
+        &--img {
+            @include tablet {
+                width: 50%;
+            }
+        }
+        &--title {
+            text-align: center;
+            color: $dark;
+        }
+    }
+    &__backface {
+        position: absolute;
+        z-index: -10;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        background-image: radial-gradient( circle 827px at 47.3% 48%,  $light 0%, $light 90% );        backface-visibility: hidden;
+        clip-path: ellipse(100% 60% at 50% 100%);
+    }
+}

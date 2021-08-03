@@ -1,0 +1,97 @@
+@import '../../../index.scss';
+
+.map-responsive {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin: 2rem auto;
+    max-width: 902px;
+
+    @include tablet {
+        flex-direction: column;
+        max-width: 90%;
+    }
+
+    &__map {
+        flex: 1;
+    }
+
+    &__info {
+        flex: 1;
+
+        & address {
+            padding: .5rem 0px;
+            font-style: normal;
+
+            & h3 {
+                margin: .5rem 0 5px 0;
+                padding: 0;
+            }
+
+            & a {
+                color: $dark;
+                text-decoration: none;
+                font-size: 1rem;
+                display: inline-block;
+                line-height: 1.3em;
+                margin-bottom: 10px;
+
+                &:hover {
+                    color: $lime;
+                }
+
+                &span {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+/*
+
+&address {
+    padding: 50px 0px;
+    font-style: normal;
+
+    &h3 {
+        margin: .5rem 0 5px 0;
+        padding: 0;
+    }
+
+    &a {
+        color: $dark;
+        text-decoration: none;
+        font-size: 1rem;
+        display: inline-block;
+        line-height: 1.3em;
+        margin-bottom: 10px;
+
+        &:hover {
+            color: $lime;
+        }
+
+        &span {
+            font-weight: bold;
+        }
+    }
+}
+
+*/
+  

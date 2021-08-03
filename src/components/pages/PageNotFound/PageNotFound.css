@@ -1,0 +1,12 @@
+
+.pageNotFound {
+    margin: 0 auto;
+    text-align: center;
+    padding: 10% 0;
+}
+.pageNotFound--img {
+    filter: grayscale(100%);
+}
+.pageNotFound--message {
+    color: #fb4b4e;
+}
