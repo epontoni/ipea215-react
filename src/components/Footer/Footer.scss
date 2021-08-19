@@ -1,9 +1,12 @@
+@import '../../index.scss';
+
 .footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #00cc66;
+    background-color: $lime;
     padding: 0.5rem;
+    border-bottom: 3px solid $lime;
 }
 
 .footer__copyright {
