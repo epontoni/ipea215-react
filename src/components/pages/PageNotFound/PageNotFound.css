@@ -1,11 +1,20 @@
 
 .pageNotFound {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 0 auto;
     text-align: center;
-    padding: 10% 0;
+    /*padding: 5% 0;*/
+    height: 100%;
+    height: calc(100vh - 131px);
+    overflow: hidden;
 }
 .pageNotFound--img {
     filter: grayscale(100%);
+    max-width: 25%;
+    height: auto;
 }
 .pageNotFound--message {
     color: #fb4b4e;
