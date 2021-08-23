@@ -61,6 +61,20 @@ const staff = [
         role: 'Educación Física',
         img: "images/staff/marisa-analia-libaak.png",
         directive: false,
+    },
+    {
+        id: '10',
+        name: 'Maria Belen Becerra',
+        role: 'Departamento de Matemática',
+        img: "images/staff/maria-belen-becerra.png",
+        directive: false,
+    },
+    {
+        id: '11',
+        name: 'Marina Penalba',
+        role: 'Preceptora',
+        img: "images/staff/marina-penalba.png",
+        directive: false,
     }
 ];
 
