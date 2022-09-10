@@ -1,7 +1,7 @@
 @import '../../index';
 
 .navbar {
-  background: $light; /* #1c2237 */
+  background: white;  /*$light #1c2237 */
   height: 80px;
   display: flex;
   justify-content: center;
@@ -10,7 +10,7 @@
   position: sticky;
   top: 0;
   z-index: 999;
-  border-top: 3px solid $lime;
+  border-top: 3px solid $brown; /*$lime*/
 }
 
 .navbar-container {
@@ -68,7 +68,7 @@
 }
 
 .nav-item:hover {
-  border-bottom: 2px solid $lime;
+  border-bottom: 2px solid $brown; /*$lime*/
 }
 
 .nav-links {
@@ -81,7 +81,7 @@
   height: 100%;
 }
 .nav-links:hover {
-  color: $lime;
+  color: $brown;
   transition: all 0.3s ease;
 }
 
@@ -105,8 +105,9 @@
   .nav-menu {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     position: absolute;
     top: 77px;
     left: -100%;
@@ -115,7 +116,7 @@
   }
 
   .nav-menu.active {
-    background: $lime;
+    background: $brown;
     left: 0;
     opacity: 1;
     transition: all 0.6s ease;
@@ -130,7 +131,7 @@
   }
 
   .nav-links:hover {
-    color: $orangeRed;
+    color: $dark;
     font-weight: bold;
     transform: scale(1.2);
     transition: all 0.3s ease;

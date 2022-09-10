@@ -5,6 +5,7 @@ import Navbar from './components/Navbar/Navbar';
 import { About } from './components/pages/About/About';
 import { Contact } from './components/pages/Contact/Contact';
 import { Staff } from './components/pages/Staff/Staff';
+import { News } from './components/pages/News/News';
 import PageNotFound from './components/pages/PageNotFound/PageNotFound';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Navbar />
         <Switch>
           <Route path="/" exact component={About} />
+          <Route path="/news" exact component={News} />
           <Route path="/staff" exact component={Staff} />
           <Route path="/contact" exact component={Contact} />
           <Route component={PageNotFound} />
