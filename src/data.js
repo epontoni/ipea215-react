@@ -30,17 +30,17 @@ const staff = [
     {
         id: '5',
         name: 'Soledad Giraudo',
-        role: 'Profesora de Artes Visuales',
+        role: 'Docente y Preceptora',
         img: "images/staff/soledad-giraudo.png",
         directive: false,
     },
-    {
+    /*{
         id: '6',
         name: 'Jorge Abregu',
         role: 'Educación Tecnológica',
         img: "images/staff/jorge-l-abregú.jpg",
         directive: false,
-    },
+    },*/
     {
         id: '7',
         name: 'Noelia López',
@@ -72,10 +72,44 @@ const staff = [
     {
         id: '11',
         name: 'Marina Penalba',
-        role: 'Preceptora',
+        role: 'Secretaria',
         img: "images/staff/marina-penalba.png",
+        directive: false,
+    },
+    {
+        id: '12',
+        name: 'Mariela Torres',
+        role: 'Docente',
+        img: "images/staff/mariela-torres.png",
+        directive: false,
+    },
+    {
+        id: '13',
+        name: 'Evelyn Savini',
+        role: 'Prof. de Lengua y Literatura',
+        img: "images/staff/evelyn-savini.png",
+        directive: false,
+    },
+    {
+        id: '14',
+        name: 'Carla Sartori',
+        role: 'Docente y MEP',
+        img: "images/staff/carla-sartori.png",
+        directive: false,
+    },
+    {
+        id: '15',
+        name: 'Alejandra Latorre',
+        role: 'Prof. Geografía',
+        img: "images/staff/alejandra-latorre.png",
+        directive: false,
+    },
+    {
+        id: '16',
+        name: 'Brenda Podversich',
+        role: 'Biología y Química',
+        img: "images/staff/brenda-podversich.png",
         directive: false,
     }
 ];
-
 export default staff;
